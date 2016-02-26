@@ -19,5 +19,9 @@
     "iron-fit-behavior": "PolymerElements/iron-fit-behavior#~1.0.3",
     "iron-elements": "PolymerElements/iron-elements#~1.0.3",
     "paper-elements": "PolymerElements/paper-elements#~1.0.5"
-  }
+  },
+  "homepage": "https://github.com/krible/shelf2",
+  "description": "",
+  "main": "index.html",
+  "moduleType": []
 }
