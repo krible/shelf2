@@ -10,15 +10,15 @@ P {
   font-size: 14px;
   text-transform: uppercase;
   background-color: rgba(255,255,255,.97);
-  border-top: 1px solid #eee;
   color: #999;
   height: 50px;
   padding:10px;
-  overflow: hidden;
+//  overflow: hidden;
   position: fixed;
   bottom: 0px;
   left:0px;
   right:0px;
+  box-shadow: 0 0 1px rgba(0,0,0,.44);
 }
 
 .box {
@@ -44,6 +44,7 @@ P {
   cursor:pointer;
   color:#000;
 }
+
 
 .end-xs .box {
  // border-left: 1px solid #D81B60;
@@ -99,4 +100,43 @@ INPUT {
   font-size:12px;
   line-height:15px;
   vertical-align:middle;
+}
+
+
+.bubble {
+  width: 300px;
+  height: 450px;
+  position: absolute;
+  bottom: 60px;
+  z-index: 20;
+  border-radius: 6px;
+  background-color: rgba(255,255,255,.97);
+  box-shadow: 0 0 1px rgba(0,0,0,.44);
+  display: none;
+}
+
+.bubble::before{
+    content: '';
+    position: absolute;
+    left: 48%;
+    bottom: -10px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #ccc;
+    clear: both;
+}
+
+.bubble::after{
+    content: '';
+    position: absolute;
+    left: 48%;
+    bottom: -9px;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #fff;
+    clear: both;
 }
