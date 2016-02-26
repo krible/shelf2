@@ -1,0 +1,82 @@
+P {
+  color: #555;
+  font-size: 20px;
+  margin: 40px 20%;
+}
+
+.shelf {
+  font-family: 'Roboto',sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  text-transform: uppercase;
+  background-color: rgba(255,255,255,.97);
+  border-top: 1px solid #eee;
+  color: #999;
+  height: 50px;
+  padding:10px;
+  overflow: hidden;
+  position: fixed;
+  bottom: 0px;
+  left:0px;
+  right:0px;
+}
+
+.box {
+  font-size: 14px;
+  height: 30px;
+  line-height: 30px;
+  text-align:center;
+  overflow: hidden;
+  vertical-align:middle;
+  padding: 0rem .5rem;
+}
+.material-icons {
+  font-size: 22px;
+  line-height: 30px;
+  display: inline-block;
+  margin-right:8px;
+  //border:1px solid red;
+  //float:left;
+  vertical-align:middle;
+}
+.box:hover {
+  //background-color: #eee;
+  cursor:pointer;
+  color:#000;
+}
+
+.end-xs .box {
+ // border-left: 1px solid #D81B60;
+}
+.start-xs .box {
+// border-right: 1px solid #D81B60;
+}
+.col-xs {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+BUTTON {
+  background: #fff;
+  color: #689F38;
+  height: 30px;
+  text-transform: uppercase;
+  border: 2px solid #689F38;
+  font-size: 14px;
+  border-radius: 40px;
+  padding: 0px 20px;
+  margin: 0px 20px;
+  cursor: pointer;
+}
+
+.avatar {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+  border-radius: 50%;
+  vertical-align:top;
+}
+
+.div {
+  border-left: 1px solid #ccc;
+}
