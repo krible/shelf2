@@ -65,8 +65,20 @@ BUTTON {
   font-size: 14px;
   border-radius: 40px;
   padding: 0px 20px;
-  margin: 0px 20px;
+  margin: 0px 5px;
   cursor: pointer;
+}
+
+INPUT {
+  background: #fff;
+  height: 28px;
+  width: 150px;
+  text-transform: uppercase;
+  border: 1px solid #ccc;
+  font-size: 14px;
+  border-radius: 4px;
+  padding: 0px 0px;
+  margin: 0px 5px;
 }
 
 .avatar {
@@ -79,4 +91,12 @@ BUTTON {
 
 .div {
   border-left: 1px solid #ccc;
+}
+
+.line-2 {
+  display: inline-block;
+  height:30px;
+  font-size:12px;
+  line-height:15px;
+  vertical-align:middle;
 }
