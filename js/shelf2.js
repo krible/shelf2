@@ -19,4 +19,11 @@ $(function () {
           $('#kribleShelf').addClass('fadeInUp');
       }, 1000));
 });
+
+$( ".click" ).click(function() {
+  $(".bubble").hide();
+  var bubble = $(this).children( ".bubble" );
+  bubble.show();
+  bubble.css({'margin-left': (bubble.outerWidth()-$(this).outerWidth())/2*-1});
+});
 })
