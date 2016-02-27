@@ -4,6 +4,10 @@ P {
   margin: 40px 20%;
 }
 
+:focus {
+outline: 0;
+}
+
 .shelf {
   font-family: 'Roboto',sans-serif;
   font-weight: 400;
@@ -59,10 +63,10 @@ P {
 
 BUTTON {
   background: #fff;
-  color: #689F38;
+  color: #01C544;
   height: 30px;
   text-transform: uppercase;
-  border: 2px solid #689F38;
+  border: 2px solid #01C544;
   font-size: 14px;
   border-radius: 40px;
   padding: 0px 20px;
@@ -103,6 +107,11 @@ INPUT {
 }
 
 
+.close {
+  float: right;
+  cursor: pointer;
+}
+
 .bubble {
   width: 300px;
   height: 450px;
@@ -110,9 +119,10 @@ INPUT {
   bottom: 60px;
   z-index: 20;
   border-radius: 6px;
-  background-color: rgba(255,255,255,.97);
+  background-color: rgba(250,250,250,.97);
   box-shadow: 0 0 1px rgba(0,0,0,.44);
   display: none;
+  cursor: default;
 }
 
 .bubble::before{
@@ -139,4 +149,117 @@ INPUT {
     border-right: 10px solid transparent;
     border-top: 10px solid #fff;
     clear: both;
+}
+
+#chat {
+  right: 20px;
+  text-transform: none;
+}
+
+#chat .body {
+//  overflow-y: auto;
+  //overflow-x: hidden;
+}
+
+#chat .footer {
+  background-color: #fff;
+  position: absolute;
+  bottom:20px;
+  height: 40px;
+  width: calc(100% - 10px);
+  box-shadow: 0 0 1px rgba(0,0,0,.44);
+  margin: 5px;
+  border-radius: 4px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  cursor: text;
+}
+
+#chat .copyright {
+  position: absolute;
+  bottom: 5px;
+  font-size:10px;
+  color:#ccc;
+  text-align: center;
+  width:100%;
+  line-height:15px;
+  text-transform: uppercase;
+}
+
+#chat .message {
+  font-size: 12px;
+  color: #666;
+  margin:10px;
+  line-height: 130%;
+  padding:10px;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+
+#chat .income {
+  background-color: #eee;
+  color: #333;
+  margin-left:20px;
+  border-bottom-left-radius: 0px;
+  text-align: left;
+}
+
+.income:after {
+  content:"";
+  position:absolute;
+//  top:10px; /* value = - border-top-width - border-bottom-width */
+  left:10px; /* controls horizontal position */
+  border-width: 0 0 10px 10px; /* vary these values to change the angle of the vertex */
+  border-style:solid;
+  border-color:#eee transparent;
+    /* reduce the damage in FF3.0 */
+    display:block;
+    width:0;
+}
+
+#chat .outcome {
+  background-color: #01C544;
+  color: #fff;
+  float:right;
+  margin-right:20px;
+  border-bottom-right-radius: 0px;
+  text-align: left;
+}
+
+.outcome:after {
+  content:"";
+  position:absolute;
+  //bottom:10px; /* value = - border-top-width - border-bottom-width */
+  right:10px; /* controls horizontal position */
+  border-width: 0 10px 10px 0; /* vary these values to change the angle of the vertex */
+  border-style:solid;
+  border-color:#01C544 transparent;
+    /* reduce the damage in FF3.0 */
+    display:block;
+    width:0;
+}
+
+
+#chat .operator {
+  margin: 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+#chat .operator .avatar {
+  width: 100px;
+  height: 100px;
+}
+
+#chat .operator .name {
+  font-size: 18px;
+  font-weight: 300;
+  color: #999;
+  line-height: 20px;
+  margin-top: 10px;
+}
+
+#chat .operator .description {
+  color: #999;
+  font-weight: 300;
 }
