@@ -20,6 +20,10 @@ $(function () {
       }, 1000));
 });
 
+$( ".close" ).click(function() {
+    $(this).parent().hide();
+});
+
 $( ".click" ).click(function() {
   $(".bubble").hide();
   var bubble = $(this).children( ".bubble" );
