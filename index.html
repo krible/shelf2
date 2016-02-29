@@ -4,7 +4,7 @@
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/animate.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="//cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" charset="utf-8">
+  <link rel="stylesheet" href="css/flexboxgrid.css" charset="utf-8">
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" charset="utf-8">
   <link rel="stylesheet" href="css/shelf2.css" charset="utf-8">
 
@@ -18,85 +18,79 @@
 
 <body>
 
-
-  <div id="kribleShelf" class="shelf row between-xs animated fadeInUp">
-    <div class="col-xs">
-      <div class="row start-xs">
-        <div class="col-xs-1" style="max-width:64px; padding:0px 10px;">
-          <div class="box">
-            <i class="material-icons" style="font-size:32px;">keyboard_arrow_up</i>
-          </div>
-        </div>
-        <div class="col-xs">
-          <div class="box">
-            <i class="material-icons">phone</i>
-            <div class="line-2">перезвоним
-              <br>за 30 секунд</div>
+<k-wrap id="kribleShelf" class="shelfWrapper">
+  <k-shelf class="shelf row between-xs animated fadeInUp">
+    <k-col class="col-xs">
+      <k-row class="row start-xs">
+        <k-col>
+          <k-block class="div"></k-block>
+          <k-block class="scrollup">
+            <k-i class="material-icons" style="font-size:32px;">keyboard_arrow_up</k-i>
+          </k-block>
+        </k-col>
+        <k-col class="col-xs">
+          <k-box class="box">
+            <k-i class="material-icons">phone</k-i>
+            <k-block class="line-2">перезвоним
+              <br>за 30 секунд</k-block>
             <input type="text">
             <button>позвонить</button>
-          </div>
-        </div>
-        <!-- <div class="col-xs">
-          <div class="box">
-            <button>Купить</button>
-          </div>
-        </div> -->
-        <!--     <div class="col-xs">
-            <div class="box">
-                left 3
-            </div>
-        </div> -->
-      </div>
-    </div>
-    <div class="col-xs">
-      <div class="row start-xs">
-        <div class="col-xs">
-        <div class="mid box tlt">
+          </k-box>
+        </k-col>
+      </k-row>
+    </k-col>
+    <!-- <k-col class="col-xs">
+      <k-row class="row start-xs">
+        <k-col class="col-xs">
+        <k-box class="mid box tlt">
           <ul class="texts">
             <li>Покупайте наших слонов - они жирные и вкусные!</li>
             <li>Только сегодня юбилейный концерт Иосифа Кобзона</li>
           </ul>
-        </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-xs">
-      <div class="row end-xs">
-        <div class="col-xs">
-          <div class="box click">
-            <div class="bubble" style="height:200px;">CART</div>
-            <i class="material-icons">shopping_cart</i> right 1
-          </div>
-        </div>
+        </k-box>
+        </k-col>
+      </k-row>
+    </k-col> -->
+    <k-col class="col-xs">
+      <k-row class="row end-xs">
+        <k-col class="col-xs">
+          <k-box class="box click">
+            <k-bubble class="bubble" style="height:200px;">CART</k-bubble>
+            <k-i class="material-icons">shopping_cart</k-i> right 1
+          </k-box>
+        </k-col>
 
-        <div class="col-xs">
-          <div class="box div click">
-            <div id="chat" class="bubble">
-              <div class="close"><i class="material-icons">close</i></div>
-              <div class="body">
-                <div class="operator">
+        <k-col class="col-xs">
+          <k-box class="box click">
+            <k-block class="div"></k-block>
+            <k-bubble id="chat" class="bubble">
+              <k-close class="close"><i class="material-icons">close</i></k-close>
+              <k-block class="body">
+                <k-block class="operator">
                   <img src="http://imagenes.in/wp-content/uploads/2014/08/Kareena-cute-face.jpeg" class="avatar">
                   <div class="name">Мария Мирабелла</div>
                   <div class="description">зав. складом</div>
-                </div>
+                </k-block>
                 <div class="message income">
                   Привет! Интересуешься новинками в играх? Спроси меня сколько все это стоит!
                 </div>
                 <div class="message outcome">
                   Хай, гёрл! Скока стоит?
                 </div>
-              </div>
+              </k-block>
               <div class="footer" contentEditable="true"></div>
-              <div class="copyright">
-                made in Krible.com
-              </div>
-            </div>
-            <img src="http://imagenes.in/wp-content/uploads/2014/08/Kareena-cute-face.jpeg" class="avatar"> Онлайн консультант
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+            </k-bubble>
+            <k-block>Онлайн консультант<img src="http://imagenes.in/wp-content/uploads/2014/08/Kareena-cute-face.jpeg" class="avatar"></k-block>
+          </k-box>
+        </k-col>
+        <k-col class="copyright">
+          <k-block class="div"></k-block>
+          <k-block class="about">krible</k-block>
+        </k-col>
+      </k-row>
+    </k-col>
+  </k-shelf>
+</k-wrap>
 
 
 

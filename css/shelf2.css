@@ -8,6 +8,16 @@ P {
 outline: 0;
 }
 
+#kribleShelf {
+  position: fixed;
+  bottom: 0px;
+  left:0px;
+  right:0px;
+  height: 50px;
+//  border: 1px solid red;
+  text-align: center;
+}
+
 .shelf {
   font-family: 'Roboto',sans-serif;
   font-weight: 400;
@@ -16,39 +26,38 @@ outline: 0;
   background-color: rgba(255,255,255,.97);
   color: #999;
   height: 50px;
-  padding:10px;
-//  overflow: hidden;
-  position: fixed;
-  bottom: 0px;
-  left:0px;
-  right:0px;
-  box-shadow: 0 0 1px rgba(0,0,0,.44);
+//  padding:10px;
+  box-shadow: 0 0 2px rgba(0,0,0,.44);
+  width:100%;
+  margin:0px auto;
 }
 
 .box {
+  display: block;
   font-size: 14px;
-  height: 30px;
-  line-height: 30px;
+  height: 50px;
+  line-height: 50px;
   text-align:center;
   overflow: hidden;
   vertical-align:middle;
-  padding: 0rem .5rem;
+  padding: 0px;
 }
-.material-icons {
-  font-size: 22px;
-  line-height: 30px;
-  display: inline-block;
-  margin-right:8px;
-  //border:1px solid red;
-  //float:left;
-  vertical-align:middle;
-}
+
 .box:hover {
   //background-color: #eee;
   cursor:pointer;
   color:#000;
 }
 
+.material-icons {
+  font-size: 22px;
+  line-height: 30px;
+  display: inline-block;
+  margin:10px;
+  //border:1px solid red;
+  //float:left;
+  vertical-align:middle;
+}
 
 .end-xs .box {
  // border-left: 1px solid #D81B60;
@@ -57,8 +66,8 @@ outline: 0;
 // border-right: 1px solid #D81B60;
 }
 .col-xs {
-  padding-left: 0px;
-  padding-right: 0px;
+  /*padding-left: 0px;
+  padding-right: 0px;*/
 }
 
 BUTTON {
@@ -89,13 +98,24 @@ INPUT {
 .avatar {
   width: 30px;
   height: 30px;
-  margin-right: 8px;
+  margin: 10px;
   border-radius: 50%;
   vertical-align:top;
 }
 
 .div {
-  border-left: 1px solid #ccc;
+  border-left: 1px solid #ddd;
+  height:30px;
+  width:1px;
+  margin:10px 0px;
+}
+
+.start-xs .div  {
+  float: right;
+}
+
+.end-xs .div  {
+  float: left;
 }
 
 .line-2 {
@@ -164,7 +184,7 @@ INPUT {
 #chat .footer {
   background-color: #fff;
   position: absolute;
-  bottom:20px;
+  bottom:1px;
   height: 40px;
   width: calc(100% - 10px);
   box-shadow: 0 0 1px rgba(0,0,0,.44);
@@ -173,6 +193,7 @@ INPUT {
   padding: 5px 10px;
   box-sizing: border-box;
   cursor: text;
+  text-align: left;
 }
 
 #chat .copyright {
@@ -262,4 +283,40 @@ INPUT {
 #chat .operator .description {
   color: #999;
   font-weight: 300;
+}
+
+.copyright {
+  width: 20px;
+  height: 50px;
+}
+
+.about {
+  font-size: 9px;
+  display: block;
+  position: absolute;
+  bottom:9px;
+  right: -16px;
+  margin:10px;
+  -webkit-transform: rotate(-90deg);
+   -moz-transform: rotate(-90deg);
+   -o-transform: rotate(-90deg);
+   -ms-transform: rotate(-90deg);
+   transform: rotate(-90deg);
+   cursor: pointer;
+}
+
+.about:hover {
+  color:#000;
+}
+
+.scrollup {
+  width: 30px;
+  cursor: pointer;
+}
+.scrollup .material-icons {
+  margin: 10px 0px;
+}
+
+.scrollup:hover {
+  color: #000;
 }
