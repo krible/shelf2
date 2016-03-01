@@ -32,18 +32,25 @@ outline: 0;
   margin:0px auto;
 }
 
-.box {
-  display: block;
+.k-col-xs {
+//    background-color: #ccc;
+}
+
+.shelf-item {
+  //background-color: #aaa;
+  margin:0px 10px;
+  text-align:center;
+  //display: block;
   font-size: 14px;
   height: 50px;
   line-height: 50px;
-  text-align:center;
   overflow: hidden;
   vertical-align:middle;
   padding: 0px;
 }
 
-.box:hover {
+
+.shelf-item:hover {
   //background-color: #eee;
   cursor:pointer;
   color:#000;
@@ -83,24 +90,40 @@ BUTTON {
   cursor: pointer;
 }
 
-INPUT {
+.callback_num {
   background: #fff;
   height: 28px;
   width: 150px;
   text-transform: uppercase;
   border: 1px solid #ccc;
   font-size: 14px;
-  border-radius: 4px;
-  padding: 0px 0px;
+  border-radius: 40px;
+  padding: 0px 10px;
   margin: 0px 5px;
+  color: #666;
+}
+
+.active {
+  background-color: #01C544;
+  color: #fff;
+}
+
+.oval {
+  border-radius: 30px;
+  width:30px;
+  height:30px;
 }
 
 .avatar {
   width: 30px;
   height: 30px;
-  margin: 10px;
+  margin: 10px 0px;
   border-radius: 50%;
   vertical-align:top;
+}
+
+.shelf-item .avatar {
+  margin: 10px;
 }
 
 .div {
@@ -108,14 +131,15 @@ INPUT {
   height:30px;
   width:1px;
   margin:10px 0px;
+  //display: inline-block;
 }
 
 .start-xs .div  {
-  float: right;
+//  float: right;
 }
 
 .end-xs .div  {
-  float: left;
+//  float: left;
 }
 
 .line-2 {
@@ -140,9 +164,10 @@ INPUT {
   z-index: 20;
   border-radius: 6px;
   background-color: rgba(250,250,250,.97);
-  box-shadow: 0 0 1px rgba(0,0,0,.44);
+  box-shadow: 0 0 2px rgba(0,0,0,.44);
   display: none;
   cursor: default;
+  text-align: center;
 }
 
 .bubble::before{
@@ -310,11 +335,14 @@ INPUT {
 }
 
 .scrollup {
-  width: 30px;
+  border-right: 1px solid #eee;
+  width: 32px;
+  height: 30px;
+  margin:10px 0px;
   cursor: pointer;
 }
 .scrollup .material-icons {
-  margin: 10px 0px;
+  margin: 2px 0px;
 }
 
 .scrollup:hover {

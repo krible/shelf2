@@ -1,152 +1,169 @@
 <!DOCTYPE html>
 <html>
 
-<head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/animate.css" media="screen" title="no title" charset="utf-8">
-  <link rel="stylesheet" href="css/flexboxgrid.css" charset="utf-8">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" charset="utf-8">
-  <link rel="stylesheet" href="css/shelf2.css" charset="utf-8">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/animate.css" media="screen" title="no title" charset="utf-8">
+    <link rel="stylesheet" href="css/flexboxgrid.min.css" charset="utf-8">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" charset="utf-8">
+    <link rel="stylesheet" href="css/shelf2.css" charset="utf-8">
 
-  <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/lettering/0.7.0/jquery.lettering.min.js"></script>
-  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/lettering/0.7.0/jquery.lettering.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/textillate/0.4.0/jquery.textillate.min.js"></script>
 
-  <script type="text/javascript" src="js/shelf2.js"></script>
+    <script type="text/javascript" src="js/shelf2.js"></script>
 
-</head>
+  </head>
 
-<body>
+  <body>
 
-<k-wrap id="kribleShelf" class="shelfWrapper">
-  <k-shelf class="shelf row between-xs animated fadeInUp">
-    <k-col class="col-xs">
-      <k-row class="row start-xs">
-        <k-col>
-          <k-block class="div"></k-block>
-          <k-block class="scrollup">
-            <k-i class="material-icons" style="font-size:32px;">keyboard_arrow_up</k-i>
-          </k-block>
-        </k-col>
-        <k-col class="col-xs">
-          <k-box class="box">
+    <k-wrap id="kribleShelf" class="shelfWrapper">
+      <k-shelf class="shelf k-row animated fadeInUp">
+
+        <!-- LEFT BLOCK -->
+        <k-div class="k-col-xs">
+          <k-div class="k-row start-xs">
+
+            <k-div class="scrollup">
+              <k-i class="material-icons" style="font-size:32px;">keyboard_arrow_up</k-i>
+            </k-div>
+
+            <!-- <k-div class="k-col-xs">
+          <k-div class="box">
             <k-i class="material-icons">phone</k-i>
-            <k-block class="line-2">перезвоним
-              <br>за 30 секунд</k-block>
+            <k-div class="line-2">перезвоним
+              <br>за 30 секунд</k-div>
             <input type="text">
             <button>позвонить</button>
-          </k-box>
-        </k-col>
-      </k-row>
-    </k-col>
-    <!-- <k-col class="col-xs">
-      <k-row class="row start-xs">
-        <k-col class="col-xs">
-        <k-box class="mid box tlt">
-          <ul class="texts">
-            <li>Покупайте наших слонов - они жирные и вкусные!</li>
-            <li>Только сегодня юбилейный концерт Иосифа Кобзона</li>
-          </ul>
-        </k-box>
-        </k-col>
-      </k-row>
-    </k-col> -->
-    <k-col class="col-xs">
-      <k-row class="row end-xs">
-        <k-col class="col-xs">
-          <k-box class="box click">
-            <k-bubble class="bubble" style="height:200px;">CART</k-bubble>
-            <k-i class="material-icons">shopping_cart</k-i> right 1
-          </k-box>
-        </k-col>
+          </k-div>
+        </k-div> -->
 
-        <k-col class="col-xs">
-          <k-box class="box click">
-            <k-block class="div"></k-block>
-            <k-bubble id="chat" class="bubble">
-              <k-close class="close"><i class="material-icons">close</i></k-close>
-              <k-block class="body">
-                <k-block class="operator">
-                  <img src="http://imagenes.in/wp-content/uploads/2014/08/Kareena-cute-face.jpeg" class="avatar">
-                  <div class="name">Мария Мирабелла</div>
-                  <div class="description">зав. складом</div>
-                </k-block>
-                <div class="message income">
-                  Привет! Интересуешься новинками в играх? Спроси меня сколько все это стоит!
-                </div>
-                <div class="message outcome">
-                  Хай, гёрл! Скока стоит?
-                </div>
-              </k-block>
-              <div class="footer" contentEditable="true"></div>
-            </k-bubble>
-            <k-block>Онлайн консультант<img src="http://imagenes.in/wp-content/uploads/2014/08/Kareena-cute-face.jpeg" class="avatar"></k-block>
-          </k-box>
-        </k-col>
-        <k-col class="copyright">
-          <k-block class="div"></k-block>
-          <k-block class="about">krible</k-block>
-        </k-col>
-      </k-row>
-    </k-col>
-  </k-shelf>
-</k-wrap>
+            <k-div class="k-col-xs">
+              <k-div class="shelf-item click">
+                <k-div class="bubble" style="height:200px;">Телепортатор</k-div>
+                <k-i class="material-icons">navigation</k-i>
+                телепортатор
+              </k-div>
+            </k-div>
 
+          </k-div>
+        </k-div>
+        <!-- END LEFT BLOCK -->
 
+        <!-- CENTER BLOCK -->
+        <k-div class="k-col-lg">
+          <k-div class="k-row center-xs">
 
-  <p>
-    This heavy and unequal burden is unfair. It’s also a serious obstacle to progress, because women are so busy meeting basic needs that they can’t invest in the future by doing paid work, going to school, or visiting the doctor regularly.
+            <k-div class="k-col-xs">
+              <k-div class="shelf-item" style="display:block;">
+                <k-div class="tlt">
+                  <ul class="texts">
+                    <li>Покупайте наших слонов - они жирные и вкусные!</li>
+                    <li>Только сегодня юбилейный концерт Иосифа Кобзона</li>
+                  </ul>
+                </k-div>
+              </k-div>
+            </k-div>
+
+          </k-div>
+        </k-div>
+        <!-- END CENTER BLOCK -->
+
+        <!-- RIGHT BLOCK -->
+        <k-div class="k-col-lg k-col-xs">
+          <k-div class="k-row end-xs">
+
+            <k-div class="k-col-xs">
+              <k-div class="click">
+                <k-div id="chat" class="bubble">
+                  <k-close class="close">
+                    <i class="material-icons">close</i>
+                  </k-close>
+                  <k-div class="body">
+                    <k-div class="operator">
+                      <img src="http://imagenes.in/wp-content/uploads/2014/08/Kareena-cute-face.jpeg" class="avatar">
+                      <div class="name">Мария Мирабелла</div>
+                      <div class="description">зав. складом</div>
+                    </k-div>
+                    <div class="message income">
+                      Привет! Интересуешься новинками в играх? Спроси меня сколько все это стоит!
+                    </div>
+                    <div class="message outcome">
+                      Хай, гёрл! Скока стоит?
+                    </div>
+                  </k-div>
+                  <div class="footer" contentEditable="true"></div>
+                </k-div>
+                <k-div class="shelf-item">
+                  <!-- <input type="text" class="callback_num" value="+7 (___) ___-__-__">  -->
+                  <k-i class="oval active material-icons">phone</k-i>
+                  Онлайн консультант
+                  <img src="http://imagenes.in/wp-content/uploads/2014/08/Kareena-cute-face.jpeg" class="avatar"></k-div>
+              </k-div>
+            </k-div>
+
+            <k-div class="copyright" style="border-left:1px solid #eee;">
+              <k-div class="about">krible</k-div>
+            </k-div>
+
+          </k-div>
+        </k-div>
+        <!-- END RIGHT BLOCK -->
+
+      </k-shelf>
+    </k-wrap>
+
     <p>
-      One solution is to invest in cheap, clean energy so that unpaid work doesn’t take so many hours. But reducing the time required to do household tasks isn’t enough. No matter how efficient we make housework, we won’t free up women’s time until we all recognize
-      that their time is just as valuable as men’s. There’s not a single country in the world where men do as much unpaid work as women, so everyone has plenty of room for improvement on this score.
+      This heavy and unequal burden is unfair. It’s also a serious obstacle to progress, because women are so busy meeting basic needs that they can’t invest in the future by doing paid work, going to school, or visiting the doctor regularly.
       <p>
-        The division of work depends on cultural norms, and we call them norms because they seem normal — so normal that many of us don’t notice the assumptions we’re making about how women and men are “supposed to” spend their time. We’d love to play a role
-        in inspiring young people to help shift those norms.
+        One solution is to invest in cheap, clean energy so that unpaid work doesn’t take so many hours. But reducing the time required to do household tasks isn’t enough. No matter how efficient we make housework, we won’t free up women’s time until we all
+        recognize that their time is just as valuable as men’s. There’s not a single country in the world where men do as much unpaid work as women, so everyone has plenty of room for improvement on this score.
         <p>
-          Energy and time are important issues, but there are many others. What can you do to improve the world? What superpower do you wish you had? Join the discussion by sharing your #superpowerforgood.
+          The division of work depends on cultural norms, and we call them norms because they seem normal — so normal that many of us don’t notice the assumptions we’re making about how women and men are “supposed to” spend their time. We’d love to play a role
+          in inspiring young people to help shift those norms.
           <p>
-            To produce much more cheap, clean energy, we must make better use of existing technologies, such as solar and wind. Even more important, we’re going to need a massive amount of research into thousands of new ideas. Today, the U.S. government is the largest
-            funder of energy R&D, and yet we’re still woefully underinvesting. In fact, consumers spend more on gasoline in a week than the government spends on clean-energy research in a year!
+            Energy and time are important issues, but there are many others. What can you do to improve the world? What superpower do you wish you had? Join the discussion by sharing your #superpowerforgood.
             <p>
-              Without access to energy, the poor are stuck in the dark, denied all of the economic, social, and health benefits that come with power. So if we really want to help the world’s poorest families, we need to find a way to get them access to energy they
-              can afford. And we need to do it in a way that doesn’t make climate change worse, because the poor are more vulnerable to extreme weather and other climate impacts than anyone else.
+              To produce much more cheap, clean energy, we must make better use of existing technologies, such as solar and wind. Even more important, we’re going to need a massive amount of research into thousands of new ideas. Today, the U.S. government is the
+              largest funder of energy R&D, and yet we’re still woefully underinvesting. In fact, consumers spend more on gasoline in a week than the government spends on clean-energy research in a year!
               <p>
+                Without access to energy, the poor are stuck in the dark, denied all of the economic, social, and health benefits that come with power. So if we really want to help the world’s poorest families, we need to find a way to get them access to energy they
+                can afford. And we need to do it in a way that doesn’t make climate change worse, because the poor are more vulnerable to extreme weather and other climate impacts than anyone else.
                 <p>
-                  This heavy and unequal burden is unfair. It’s also a serious obstacle to progress, because women are so busy meeting basic needs that they can’t invest in the future by doing paid work, going to school, or visiting the doctor regularly.
                   <p>
-                    One solution is to invest in cheap, clean energy so that unpaid work doesn’t take so many hours. But reducing the time required to do household tasks isn’t enough. No matter how efficient we make housework, we won’t free up women’s time until we all recognize
-                    that their time is just as valuable as men’s. There’s not a single country in the world where men do as much unpaid work as women, so everyone has plenty of room for improvement on this score.
+                    This heavy and unequal burden is unfair. It’s also a serious obstacle to progress, because women are so busy meeting basic needs that they can’t invest in the future by doing paid work, going to school, or visiting the doctor regularly.
                     <p>
-                      The division of work depends on cultural norms, and we call them norms because they seem normal — so normal that many of us don’t notice the assumptions we’re making about how women and men are “supposed to” spend their time. We’d love to play a role
-                      in inspiring young people to help shift those norms.
+                      One solution is to invest in cheap, clean energy so that unpaid work doesn’t take so many hours. But reducing the time required to do household tasks isn’t enough. No matter how efficient we make housework, we won’t free up women’s time until we all
+                      recognize that their time is just as valuable as men’s. There’s not a single country in the world where men do as much unpaid work as women, so everyone has plenty of room for improvement on this score.
                       <p>
-                        Energy and time are important issues, but there are many others. What can you do to improve the world? What superpower do you wish you had? Join the discussion by sharing your #superpowerforgood.
+                        The division of work depends on cultural norms, and we call them norms because they seem normal — so normal that many of us don’t notice the assumptions we’re making about how women and men are “supposed to” spend their time. We’d love to play a role
+                        in inspiring young people to help shift those norms.
                         <p>
-                          To produce much more cheap, clean energy, we must make better use of existing technologies, such as solar and wind. Even more important, we’re going to need a massive amount of research into thousands of new ideas. Today, the U.S. government is the largest
-                          funder of energy R&D, and yet we’re still woefully underinvesting. In fact, consumers spend more on gasoline in a week than the government spends on clean-energy research in a year!
+                          Energy and time are important issues, but there are many others. What can you do to improve the world? What superpower do you wish you had? Join the discussion by sharing your #superpowerforgood.
                           <p>
-                            Without access to energy, the poor are stuck in the dark, denied all of the economic, social, and health benefits that come with power. So if we really want to help the world’s poorest families, we need to find a way to get them access to energy they
-                            can afford. And we need to do it in a way that doesn’t make climate change worse, because the poor are more vulnerable to extreme weather and other climate impacts than anyone else.
+                            To produce much more cheap, clean energy, we must make better use of existing technologies, such as solar and wind. Even more important, we’re going to need a massive amount of research into thousands of new ideas. Today, the U.S. government is the
+                            largest funder of energy R&D, and yet we’re still woefully underinvesting. In fact, consumers spend more on gasoline in a week than the government spends on clean-energy research in a year!
                             <p>
+                              Without access to energy, the poor are stuck in the dark, denied all of the economic, social, and health benefits that come with power. So if we really want to help the world’s poorest families, we need to find a way to get them access to energy they
+                              can afford. And we need to do it in a way that doesn’t make climate change worse, because the poor are more vulnerable to extreme weather and other climate impacts than anyone else.
                               <p>
-                                This heavy and unequal burden is unfair. It’s also a serious obstacle to progress, because women are so busy meeting basic needs that they can’t invest in the future by doing paid work, going to school, or visiting the doctor regularly.
                                 <p>
-                                  One solution is to invest in cheap, clean energy so that unpaid work doesn’t take so many hours. But reducing the time required to do household tasks isn’t enough. No matter how efficient we make housework, we won’t free up women’s time until we all recognize
-                                  that their time is just as valuable as men’s. There’s not a single country in the world where men do as much unpaid work as women, so everyone has plenty of room for improvement on this score.
+                                  This heavy and unequal burden is unfair. It’s also a serious obstacle to progress, because women are so busy meeting basic needs that they can’t invest in the future by doing paid work, going to school, or visiting the doctor regularly.
                                   <p>
-                                    The division of work depends on cultural norms, and we call them norms because they seem normal — so normal that many of us don’t notice the assumptions we’re making about how women and men are “supposed to” spend their time. We’d love to play a role
-                                    in inspiring young people to help shift those norms.
+                                    One solution is to invest in cheap, clean energy so that unpaid work doesn’t take so many hours. But reducing the time required to do household tasks isn’t enough. No matter how efficient we make housework, we won’t free up women’s time until we all
+                                    recognize that their time is just as valuable as men’s. There’s not a single country in the world where men do as much unpaid work as women, so everyone has plenty of room for improvement on this score.
                                     <p>
-                                      Energy and time are important issues, but there are many others. What can you do to improve the world? What superpower do you wish you had? Join the discussion by sharing your #superpowerforgood.
+                                      The division of work depends on cultural norms, and we call them norms because they seem normal — so normal that many of us don’t notice the assumptions we’re making about how women and men are “supposed to” spend their time. We’d love to play a role
+                                      in inspiring young people to help shift those norms.
                                       <p>
-                                        To produce much more cheap, clean energy, we must make better use of existing technologies, such as solar and wind. Even more important, we’re going to need a massive amount of research into thousands of new ideas. Today, the U.S. government is the largest
-                                        funder of energy R&D, and yet we’re still woefully underinvesting. In fact, consumers spend more on gasoline in a week than the government spends on clean-energy research in a year!
+                                        Energy and time are important issues, but there are many others. What can you do to improve the world? What superpower do you wish you had? Join the discussion by sharing your #superpowerforgood.
                                         <p>
-                                          Without access to energy, the poor are stuck in the dark, denied all of the economic, social, and health benefits that come with power. So if we really want to help the world’s poorest families, we need to find a way to get them access to energy they
-                                          can afford. And we need to do it in a way that doesn’t make climate change worse, because the poor are more vulnerable to extreme weather and other climate impacts than anyone else.
+                                          To produce much more cheap, clean energy, we must make better use of existing technologies, such as solar and wind. Even more important, we’re going to need a massive amount of research into thousands of new ideas. Today, the U.S. government is the
+                                          largest funder of energy R&D, and yet we’re still woefully underinvesting. In fact, consumers spend more on gasoline in a week than the government spends on clean-energy research in a year!
                                           <p>
+                                            Without access to energy, the poor are stuck in the dark, denied all of the economic, social, and health benefits that come with power. So if we really want to help the world’s poorest families, we need to find a way to get them access to energy they
+                                            can afford. And we need to do it in a way that doesn’t make climate change worse, because the poor are more vulnerable to extreme weather and other climate impacts than anyone else.
+                                            <p></body>
 
-
-</body>
-
-</html>
+                                          </html>
