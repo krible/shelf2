@@ -52,6 +52,7 @@ $prefix: 'k-';
 }
 
 .#{$prefix}col-xs,
+.#{$prefix}col-xs-0,
 .#{$prefix}col-xs-1,
 .#{$prefix}col-xs-2,
 .#{$prefix}col-xs-3,
@@ -94,6 +95,13 @@ $prefix: 'k-';
   -ms-flex-preferred-size: 0;
   flex-basis: 0;
   max-width: 100%;
+}
+
+.#{$prefix}col-xs-0 {
+  -webkit-flex-basis: 0%;
+  -ms-flex-preferred-size: 0%;
+  flex-basis: 0%;
+  max-width: 0%;
 }
 
 .#{$prefix}col-xs-1 {
